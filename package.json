@@ -1,5 +1,5 @@
 {
-  "name": "shape-it",
+  "name": "@xkvip/shape-it",
   "version": "1.0.0",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -36,9 +36,7 @@
   },
   "homepage": "https://github.com/ValeraKvip/shape-it#readme",
   "description": "The package allows you to configure your entire sveltekit(svelte5) app, automatically generating endpoints, APIs, an admin CMS, database relations and models, unit tests, documentation, authentication, and more, creating a robust foundation for further development.",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
+
   "dependencies": {
     "detect-installed": "^2.0.4",
     "pluralize": "^8.0.0",

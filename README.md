@@ -38,12 +38,12 @@ npm install
 
 2. Install [Shape-it via npm](https://svelte.dev/docs/kit/creating-a-project)
 ```
-npm install shape-it
+npm install @xkvip/shape-it
 ```
 
 3. In the root of the project, create a file `shape-it.js`.
 ```javascript
-import {ShapeIt} from 'shape-it';
+import {ShapeIt} from '@xkvip/shape-it';
 
 ShapeIt({      
     book:{
