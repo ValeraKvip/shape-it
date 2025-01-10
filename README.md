@@ -36,7 +36,7 @@ cd my-app
 npm install    
 ```
 
-2. Install [Shape-it via npm](https://svelte.dev/docs/kit/creating-a-project)
+2. Install [Shape-it via npm](https://www.npmjs.com/package/@xkvip/shape-it)
 ```
 npm install @xkvip/shape-it
 ```
