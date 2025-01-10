@@ -41,7 +41,7 @@
 </script>
 
 <div
-	class="relative flex min-h-64 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed border-gray-300 bg-gray-50 hover:bg-gray-100 dark:border-gray-600 dark:bg-gray-700 dark:hover:border-gray-500 dark:hover:bg-gray-600 dark:hover:bg-gray-800"
+	class="relative flex min-h-64 w-full cursor-pointer flex-col items-center justify-center rounded-lg border-2 border-dashed    border-gray-600 bg-gray-700 hover:border-gray-500  hover:bg-gray-800"
 >
 	{#if filesDisplay.length}
 		<div class="grid grid-cols-2 gap-4 p-1 md:grid-cols-3">
@@ -53,7 +53,7 @@
 						type="button"
 						data-drawer-dismiss="drawer-update-product-default"
 						aria-controls="drawer-update-product-default"
-						class="absolute right-2 top-2 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+						class="absolute right-2 top-2 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400  hover:bg-gray-600 hover:text-white"
 					>
 						<svg
 							aria-hidden="true"
@@ -76,7 +76,7 @@
 	{:else}
 		<div class="pointer-events-none flex flex-col items-center justify-center pb-6 pt-5">
 			<svg
-				class="mb-4 h-8 w-8 text-gray-500 dark:text-gray-400"
+				class="mb-4 h-8 w-8  text-gray-400"
 				aria-hidden="true"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
@@ -90,10 +90,10 @@
 					d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
 				/>
 			</svg>
-			<p class="mb-2 text-sm text-gray-500 dark:text-gray-400">
+			<p class="mb-2 text-sm  text-gray-400">
 				<span class="font-semibold">Click to upload</span> or drag and drop
 			</p>
-			<p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+			<p class="text-xs  text-gray-400">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
 		</div>
 	{/if}
 	<input
@@ -121,15 +121,15 @@
 >
 	<div class="relative max-h-full p-4">
 		<!-- Modal content -->
-		<div class="relative rounded-lg bg-white shadow dark:bg-gray-700">
+		<div class="relative rounded-lg shadow bg-gray-700">
 			<!-- Modal header -->
 			<div
-				class="flex items-center justify-between rounded-t border-b p-4 md:p-5 dark:border-gray-600"
+				class="flex items-center justify-between rounded-t border-b p-4 md:p-5 border-gray-600"
 			>
-				<h3 class="text-xl font-semibold text-gray-900 dark:text-white"></h3>
+				<h3 class="text-xl font-semibold text-gray-900 text-white"></h3>
 				<button
 					type="button"
-					class="ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white"
+					class="ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg bg-transparent text-sm text-gray-400   hover:bg-gray-600 hover:text-white"
 					data-modal-hide="default-modal"
 				>
 					<svg
@@ -156,20 +156,9 @@
 			</div>
 			<!-- Modal footer -->
 			<div
-				class="flex items-center rounded-b border-t border-gray-200 p-4 md:p-5 dark:border-gray-600"
+				class="flex items-center rounded-b border-t  p-4 md:p-5 border-gray-600"
 			>
-				<!-- <button
-					data-modal-hide="default-modal"
-					type="button"
-					class="rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-					>I accept</button
-				>
-				<button
-					data-modal-hide="default-modal"
-					type="button"
-					class="ms-3 rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium text-gray-900 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:outline-none focus:ring-4 focus:ring-gray-100 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:ring-gray-700"
-					>Decline</button
-				> -->
+				
 			</div>
 		</div>
 	</div>

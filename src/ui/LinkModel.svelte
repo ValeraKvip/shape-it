@@ -73,11 +73,11 @@
 </script>
 
 <div
-	class="space-y-2 rounded-lg border border-gray-300 bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-800"
+	class="space-y-2 rounded-lg border   p-4 border-gray-600 bg-gray-800"
 >
 	{#each selectedAsArray as item (item.id)}
 		<div
-			class=" flex items-center rounded-lg bg-blue-50 p-4 text-white dark:bg-gray-600"
+			class=" flex items-center rounded-lg  p-4 text-white bg-gray-600"
 			transition:slide={{ axis: 'y', duration: 100 }}
 		>
 			<div class="ms-3 text-sm font-medium">
@@ -86,7 +86,7 @@
 			<button
 				onclick={() => removeSelected(item)}
 				type="button"
-				class="dark:bg-gray-00 -mx-1.5 -my-1.5 ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg p-1.5 text-white hover:bg-blue-800 focus:ring-2 focus:ring-blue-400 dark:hover:bg-gray-700"
+				class="bg-gray-00 -mx-1.5 -my-1.5 ms-auto inline-flex h-8 w-8 items-center justify-center rounded-lg p-1.5 text-white focus:ring-2 focus:ring-blue-400 hover:bg-gray-700"
 				data-dismiss-target="#alert-1"
 				aria-label="Close"
 			>
@@ -114,7 +114,7 @@
 		<button
 			type="button"
 			onclick={() => openLinkWindow()}
-			class="me-2 inline-flex items-center rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+			class="me-2 inline-flex items-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
 		>
 			<svg
 				class="me-2 h-5 w-5"
@@ -145,7 +145,7 @@
 			src={`${path}?mode=linking&max=${max}&selected=${selected != null ? (isMany ? selected.map((x) => x.id).join() : selected.id) : ''}`}
 			{title}
 			transition:fly={{ duration: 150, x: '-100vw' }}
-			class="fixed left-0 top-0 z-40 h-screen w-full -translate-x-full transform-none overflow-y-auto bg-white transition-transform md:max-w-4xl xl:max-w-7xl dark:bg-gray-800"
+			class="fixed left-0 top-0 z-40 h-screen w-full -translate-x-full transform-none overflow-y-auto transition-transform md:max-w-4xl xl:max-w-7xl bg-gray-800"
 		>
 		</iframe>
 	</div>

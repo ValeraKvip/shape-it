@@ -7,8 +7,7 @@ export class DefaultStyleProvider implements StyleProvider {
   getDarkThemeStyle(): string {
 
     return `
-        <script>
-          import '../app.css';
+        <script>        
           import '../admin.css';
           let { children } = $props();
         </script>

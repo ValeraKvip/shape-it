@@ -122,11 +122,11 @@
 </script>
 
 <!-- Start block -->
-<section class="bg-gray-50 p-3 antialiased sm:p-5 dark:bg-gray-900">
+<section class=" p-3 antialiased sm:p-5 bg-gray-900">
   <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
     <!-- Start coding here -->
     <div
-      class="relative overflow-hidden bg-white shadow-md sm:rounded-lg dark:bg-gray-800"
+      class="relative overflow-hidden  shadow-md sm:rounded-lg bg-gray-800"
     >
       <div
         class="flex flex-col items-center justify-between space-y-3 p-4 md:flex-row md:space-x-4 md:space-y-0"
@@ -140,7 +140,7 @@
             >
               <svg
                 aria-hidden="true"
-                class="h-5 w-5 text-gray-500 dark:text-gray-400"
+                class="h-5 w-5  text-gray-400"
                 fill="currentColor"
                 viewbox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@
             <input
               type="text"
               id="simple-search"
-              class="focus:ring-primary-500 focus:border-primary-500 dark:focus:ring-primary-500 dark:focus:border-primary-500 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2 pl-10 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 !pr-14"
+              class="focus:ring-primary-500 focus:border-primary-500 focus:ring-primary-500 focus:border-primary-500 block w-full rounded-lg border   p-2 pl-10 text-sm  border-gray-600 bg-gray-700 text-white placeholder-gray-400 !pr-14"
               placeholder="Search"
               bind:value={search}
             />
@@ -173,7 +173,7 @@
             id="createProductModalButton"
             data-modal-target="createProductModal"
             data-modal-toggle="createProductModal"
-            class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium text-white focus:outline-none focus:ring-4"
+            class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium text-white focus:outline-none focus:ring-4"
           >
             <svg
               class="mr-2 h-3.5 w-3.5"
@@ -193,16 +193,16 @@
           <div class="flex w-full items-center space-x-3 md:w-auto">
             <div
               id="actionsDropdown"
-              class="z-10 hidden w-44 divide-y divide-gray-100 rounded bg-white shadow dark:divide-gray-600 dark:bg-gray-700"
+              class="z-10 hidden w-44 divide-y  rounded shadow divide-gray-600 bg-gray-700"
             >
               <ul
-                class="py-1 text-sm text-gray-700 dark:text-gray-200"
+                class="py-1 text-sm  text-gray-200"
                 aria-labelledby="actionsDropdownButton"
               >
                 <li>
                   <a
                     href="#"
-                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                    class="block px-4 py-2  hover:bg-gray-600 hover:text-white"
                     >Mass Edit</a
                   >
                 </li>
@@ -210,7 +210,7 @@
               <div class="py-1">
                 <a
                   href="#"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                  class="block px-4 py-2 text-sm   text-gray-200 hover:bg-gray-600 hover:text-white"
                   >Delete all</a
                 >
               </div>
@@ -220,10 +220,10 @@
       </div>
       <div class="overflow-x-auto">
         <table
-          class="w-full text-left text-sm text-gray-500 dark:text-gray-400"
+          class="w-full text-left text-sm  text-gray-400"
         >
           <thead
-            class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400"
+            class="text-xs uppercase  bg-gray-700 text-gray-400"
           >
             <tr>
               <th scope="col" class="px-4 py-4"></th>
@@ -234,9 +234,9 @@
           </thead>
           <tbody>
             {#each items as item (item.id)}
-              <tr class="border-b dark:border-gray-700">
+              <tr class="border-b border-gray-700">
                 <td class="my-1 px-4 py-3">
-                  <div class=" dark:bg-gray-800">
+                  <div class=" bg-gray-800">
                     
                     {#if isLinkingMode}                   
                         <input
@@ -248,7 +248,7 @@
                     {:else}
                       <a href="{path}/{item.id}" aria-label="c">
                         <svg
-                          class="h-6 w-6 text-gray-800 dark:text-white"
+                          class="h-6 w-6  text-white"
                           aria-hidden="true"
                           xmlns="http://www.w3.org/2000/svg"
                           width="24"
@@ -279,13 +279,13 @@
         aria-label="Table navigation"
       >
         {#if total > 0}
-          <span class="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <span class="text-sm font-normal  text-gray-400">
             Showing
-            <span class="font-semibold text-gray-900 dark:text-white"
+            <span class="font-semibold  text-white"
               >{start + 1}-{start + count < total ? start + count : total}</span
             >
             of
-            <span class="font-semibold text-gray-900 dark:text-white"
+            <span class="font-semibold  text-white"
               >{start + count < total ? start + count : total}</span
             >
           </span>
@@ -296,7 +296,7 @@
               <button
                 onclick={() => paginationNavigate(currentPage - 1)}
                 disabled={currentPage == 1}
-                class="ml-0 flex h-full items-center justify-center rounded-l-lg border border-gray-300 bg-white px-3 py-1.5 text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                class="ml-0 flex h-full items-center justify-center rounded-l-lg border   px-3 py-1.5    border-gray-700 bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white"
               >
                 <span class="sr-only">Previous{currentPage - 1}</span>
                 <svg
@@ -318,7 +318,7 @@
               {#if pg === '...'}
                 <li>
                   <button
-                    class="flex items-center justify-center border border-gray-300 bg-white px-3 py-2 text-sm leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    class="flex items-center justify-center border   px-3 py-2 text-sm leading-tight   border-gray-700 bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white"
                     >...</button
                   >
                 </li>
@@ -326,7 +326,7 @@
                 <li>
                   <button
                     onclick={() => paginationNavigate(pg)}
-                    class="flex items-center justify-center border border-gray-300 bg-white px-3 py-2 text-sm leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                    class="flex items-center justify-center border px-3 py-2 text-sm leading-tight   border-gray-700 bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white"
                     >{pg}</button
                   >
                 </li>
@@ -337,7 +337,7 @@
               <button
                 onclick={() => paginationNavigate(currentPage + 1)}
                 disabled={currentPage == totalPages}
-                class="flex h-full items-center justify-center rounded-r-lg border border-gray-300 bg-white px-3 py-1.5 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                class="flex h-full items-center justify-center rounded-r-lg border   px-3 py-1.5 leading-tight    border-gray-700 bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white"
               >
                 <span class="sr-only">Next {currentPage + 1}</span>
                 <svg
@@ -360,7 +360,7 @@
 
         {#if isLinkingMode}
           <button
-            class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium text-white focus:outline-none focus:ring-4"
+            class="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 bg-primary-600 hover:bg-primary-700 focus:ring-primary-800 flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium text-white focus:outline-none focus:ring-4"
             onclick={() => {
               window.parent.postMessage(
                 { selected: JSON.stringify(linkSelected) },

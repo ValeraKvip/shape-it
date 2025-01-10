@@ -3,6 +3,7 @@ import prettier = require('prettier');
 import { RootModels, Schema } from "./Schema";
 import path = require('path');
 import { copy_components } from './ui/copy_components';
+import { copy_styles } from './styles/copy_styles';
 
 
 export default function shapeServer(models: RootModels, schema: Schema) {
@@ -59,4 +60,7 @@ export default function shapeServer(models: RootModels, schema: Schema) {
     //Copy Ui files to components
     const componentsToCopy = copy_components();
     componentsToCopy.forEach(writeFile);
+
+    const stylesToCopy = copy_styles();
+    stylesToCopy.forEach(writeFile);
 }

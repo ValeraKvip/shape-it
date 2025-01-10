@@ -1,12 +1,12 @@
 {
   "name": "@xkvip/shape-it",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
     "test": "vitest",
-    "build": "copyfiles -u 1 src/ui/*.svelte build && tsc -d",
-    "build:watch": "copyfiles -u 1 src/ui/*.svelte build && tsc -d --watch "
+    "build": "copyfiles -u 1 src/ui/*.svelte src/styles/*.css build && tsc -d",
+    "build:watch": "copyfiles -u 1 src/ui/*.svelte src/styles/*.css build && tsc -d --watch "
   },
   "repository": {
     "type": "git",

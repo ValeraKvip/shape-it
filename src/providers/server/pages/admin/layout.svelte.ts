@@ -21,8 +21,7 @@ function get_admin_layout_svelte(schema:Schema,serverProvider: ServerProvider, m
 
 
     return `
-    <script>
-    import '../../app.css';
+    <script>   
     import '../../admin.css';   
 
     let { children } = $props();
