@@ -115,3 +115,5 @@ password: admin
 8. Go to `/api` and explore.
 9. Back to code. Open `docs/swagger.json` Copy.<br>
 Navigate to https://editor-next.swagger.io/ and paste.
+
+10. Checkout [API-reference](https://github.com/ValeraKvip/shape-it/wiki/API-reference)
