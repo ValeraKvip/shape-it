@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "es2022",
+      "esModuleInterop": true,
+      "module": "commonjs",
+      "sourceMap": false,
+      "declaration": true,
+      "declarationMap": true,
+      "outDir": "build",    
+      "rootDir": "src", 
+      "lib": [       
+        "ES2021.String"
+      ]
+      
+    },
+    "exclude": [
+      "vite.config.ts",
+      "node_modules",
+      "models",
+      "sveltekit-test",
+      "svelte5",
+      "build"
+    ]
+  }

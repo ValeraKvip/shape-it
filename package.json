@@ -1,0 +1,54 @@
+{
+  "name": "shape-it",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "build": "copyfiles -u 1 src/ui/*.svelte build && tsc -d",
+    "build:watch": "copyfiles -u 1 src/ui/*.svelte build && tsc -d --watch "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeraKvip/shape-it.git"
+  },
+  "scarfSettings": {
+    "enabled": false
+  },
+  "keywords": [
+    "svelte",
+    "svelte5",
+    "sveltekit",
+    "generator",
+    "generate",
+    "static",
+    "generator"
+  ],
+  "files": [
+    "build/",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "kvip",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeraKvip/shape-it/issues"
+  },
+  "homepage": "https://github.com/ValeraKvip/shape-it#readme",
+  "description": "The package allows you to configure your entire sveltekit(svelte5) app, automatically generating endpoints, APIs, an admin CMS, database relations and models, unit tests, documentation, authentication, and more, creating a robust foundation for further development.",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "detect-installed": "^2.0.4",
+    "pluralize": "^8.0.0",
+    "terminal-kit": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.9",
+    "copyfiles": "^2.4.1",
+    "prettier": "^3.1.0",
+    "prettier-plugin-svelte": "^3.2.7",
+    "vitest": "^2.1.8"
+  }
+}
